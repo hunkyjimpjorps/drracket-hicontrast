@@ -1,14 +1,8 @@
 #lang info
-(define collection "drracket-hicontrast")
-(define deps '("base"))
-(define build-deps '("scribble-lib" "racket-doc" "rackunit-lib"))
-(define pkg-desc "A high-contrast theme for DrRacket")
-(define version "1")
-(define pkg-authors '(jimpjorps))
-(define license '(MIT))
 
 (define framework:color-schemes
-  '(#hash((white-on-black-base? . #t)
+  '(#hash((name . "High contrast")
+          (white-on-black-base? . #t)
           (colors . ((drracket:syncheck:template-arrow #(218 112 214))
                      (plt:module-language:test-coverage-off #(255 120 118))
                      (drracket:check-syntax:both-obligation-style-pref #(0 255 255))
@@ -59,5 +53,4 @@
                      (framework:syntax-color:scheme:error #(255 0 0) italic normal)
                      (drracket:error-background-highlighting #(117 0 0))
                      (framework:line-numbers-when-word-wrapping #(169 169 169))
-                     (framework:syntax-color:scheme:constant #(128 255 0) normal)))
-          (name . "High contrast"))))
+                     (framework:syntax-color:scheme:constant #(128 255 0) normal))))))
